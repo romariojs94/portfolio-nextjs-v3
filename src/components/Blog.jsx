@@ -8,7 +8,7 @@ import {
   wordAnimation,
 } from '@/utils/animations';
 import { motion } from 'framer-motion';
-export default function Blog() {
+export default function Blog({isVisible}) {
   const posts = [
     {
       slug: 'hello-world',
@@ -24,7 +24,7 @@ export default function Blog() {
     <>
       <motion.main
         initial="initial"
-        animate="animate"
+        animate={isVisible ? 'animate' : 'initial'}
         className="py-20"
         id="blog"
       >

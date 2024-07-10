@@ -5,14 +5,14 @@ import {
   wordAnimation,
 } from '@/utils/animations';
 import { motion } from 'framer-motion';
-const Projects = () => {
+const Projects = ({isVisible}) => {
   return (
     <>
       <motion.section
         id="projects"
         className="py-10 sm:py-12 md:py-16 lg:py-20 w-full"
         initial="initial"
-        animate="animate"
+        animate={isVisible ? 'animate' : 'initial'}
       >
         <h2 className="text-3xl sm:text-4xl md:text-5xl leading-[1] py-2 lg:text-6xl font-bold text-center">
           <AnimatedWords title="Projetos recentes" />

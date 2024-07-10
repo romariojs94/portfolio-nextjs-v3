@@ -46,7 +46,7 @@ export default function Index() {
             <span className="absolute inline-flex h-full w-full bg-green-400 rounded-full animate-ping opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
           </span>
-          <p>Disponivel para novos projetos</p>
+          <p>Disponível para novos projetos</p>
         </div>
         <div
           onClick={() => {

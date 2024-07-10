@@ -4,9 +4,9 @@ const Buttons = ({ color }) => {
   return (
     <>
       <li className="flex gap-1">
-        <Link href="">
+        <Link href="https://linkedin.com/in/romariojs94" className="hover:animate-pulse hover:ease-in-out">
           <button
-            className="bg-[#ffffff] hover:animate-meteor-effect flex text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none transition-transform transform hover:scale-100 duration-300 ease-in-out"
+            className="bg-[#ffffff] flex text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none transition-transform transform hover:scale-100 duration-300 ease-in-out"
             type="button"
           >
             <svg
@@ -46,7 +46,7 @@ const Buttons = ({ color }) => {
             </svg>
           </button>
         </Link>
-        <Link href="">
+        <Link href="http://be.net/romariojs94" className="hover:animate-pulse hover:ease-in-out">
           <button
             className="bg-[#ffffff] flex text-black hover:text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none transition-transform transform hover:scale-100 duration-300 ease-in-out"
             type="button"
@@ -74,7 +74,7 @@ const Buttons = ({ color }) => {
             </svg>
           </button>
         </Link>
-        <Link href="">
+        <Link href="https://wa.me/554792169505" className="hover:animate-pulse hover:ease-in-out">
           <button
             className="bg-[#ffffff] flex text-black hover:text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none transition-transform transform hover:scale-100 duration-300 ease-in-out"
             type="button"

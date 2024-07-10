@@ -11,12 +11,12 @@ import {
 import { motion } from 'framer-motion';
 const syne = Syne({ subsets: ['latin'] });
 
-const Contato = () => {
+const Contato = ({isVisible}) => {
   return (
     <>
       <motion.section
         initial="initial"
-        animate="animate"
+        animate={isVisible ? 'animate' : 'initial'}
         className="h-[calc(100vh-154px)] flex flex-col justify-center sm:w-4/5 mx-auto"
         id="contato"
       >
