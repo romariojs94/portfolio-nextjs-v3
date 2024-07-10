@@ -13,9 +13,9 @@ const Hero = () => {
       <motion.main
         initial="initial"
         animate="animate"
-        className="w-full h-[calc(100vh-90px)] flex flex-col justify-center items-start"
+        className="w-full h-[calc(100vh-90px)] flex flex-col gap-2 justify-center items-start relative"
       >
-        <h2 className="text-left text-4xl break-all sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[10rem] font-extrabold text-[#181717] z-0">
+        <h2 className="text-left text-7xl break-all sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[10rem] font-extrabold text-[#181717] z-0">
           <AnimatedWords title="Web Developer" />
         </h2>
         <motion.p
@@ -30,7 +30,7 @@ const Hero = () => {
         >
           <Icons color="#000" />
         </motion.div>
-        <div className="absolute bottom-3 animate-bounce">
+        <div className='absolute bottom-5 left-0 animate-bounce'>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"

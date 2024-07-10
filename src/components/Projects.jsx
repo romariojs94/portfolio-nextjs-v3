@@ -14,7 +14,7 @@ const Projects = ({isVisible}) => {
         initial="initial"
         animate={isVisible ? 'animate' : 'initial'}
       >
-        <h2 className="text-3xl sm:text-4xl md:text-5xl leading-[1] py-2 lg:text-6xl font-bold text-center">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl leading-[1] py-2 lg:text-7xl font-bold text-center">
           <AnimatedWords title="Projetos recentes" />
         </h2>
         <motion.p
@@ -25,7 +25,7 @@ const Projects = ({isVisible}) => {
           layouts e elevar o desenvolvimento front-end a um novo nível.
         </motion.p>
 
-        <div className="flex flex-col lg:flex-row w-full gap-10 pt-20">
+        <div className="flex flex-col lg:flex-row w-full gap-10 pt-4 sm:pt-6 md:pt-8 lg:pt-10">
           <div className="w-full lg:w-1/2">
             <img
               className="w-full"

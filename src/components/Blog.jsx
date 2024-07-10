@@ -25,7 +25,7 @@ export default function Blog({isVisible}) {
       <motion.main
         initial="initial"
         animate={isVisible ? 'animate' : 'initial'}
-        className="py-20"
+        className="py-10 sm:py-12 md:py-16 lg:py-20"
         id="blog"
       >
         <motion.div variants={riseWithFade}>

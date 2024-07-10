@@ -39,8 +39,8 @@ export default function Index({ setIsActive }) {
         <div
           onMouseLeave={() => {
             setSelectedIndicator(pathname);
-            setIsActive(false);
           }}
+          onClickCapture={() => setIsActive(false)}
           className={styles.nav}
         >
           <div className={styles.header}>
