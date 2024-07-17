@@ -5,6 +5,7 @@ import {
   wordAnimation,
 } from '@/utils/animations';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 const Projects = ({isVisible}) => {
   return (
     <>
@@ -28,10 +29,10 @@ const Projects = ({isVisible}) => {
         <div className="flex flex-col lg:flex-row w-full gap-10 pt-4 sm:pt-6 md:pt-8 lg:pt-10">
           <div className="w-full lg:w-1/2">
             <img
-              className="w-full"
-              src="/images/quant-capital.jpg"
-              alt="Quant Capital"
-              title='Quant Capital'
+              className="w-full rounded-none"
+              src="/images/modelo.png"
+              alt=""
+              title=''
               height={720}
               width={960}
 
@@ -39,18 +40,18 @@ const Projects = ({isVisible}) => {
           </div>
           <div className="w-full lg:w-1/2">
             <h3 className="text-2xl sm:text-3xl md:text-4xl leading-[1] py-2 lg:text-5xl font-bold">
-              <AnimatedWords title="Projeto número 1" />
+              <AnimatedWords title="Seu projeto aqui" />
             </h3>
             <motion.p
               className="md:max-w-[45ch] -mt-[6px]"
               variants={riseWithFade}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              suscipit, urna nec aliquam.
+              Descrição do projeto aqui. Lorem ipsum dolor sit amet, consectetur
             </motion.p>
             <div className="flex flex-wrap items-center gap-2 mt-3 sm:mt-4 md:mt-6 lg:mt-8">
-              <a
+              <Link
                 href="/"
+                onClick={(e) => e.preventDefault()}
                 className="flex w-full sm:w-fit items-center justify-center gap-3 bg-gradient-to-br from-zinc-800 to-zinc-950 px-8 py-3 text-sm font-semibold tracking-tight text-slate-100 transition ease-in hover:shadow-2xl hover:shadow-indigo-500/40 active:scale-95"
               >
                 Visitar
@@ -82,9 +83,10 @@ const Projects = ({isVisible}) => {
                     strokeWidth="24"
                   ></polyline>
                 </svg>
-              </a>
-              <a
-                href=""
+              </Link>
+              <Link
+                href="/"
+                onClick={(e) => e.preventDefault()}
                 className="flex w-full sm:w-fit cursor-pointer items-center justify-center gap-3 bg-zinc-800 px-8 py-3 text-sm font-semibold tracking-tight text-slate-100 transition ease-in hover:bg-zinc-950 active:scale-95"
               >
                 Código fonte
@@ -110,7 +112,7 @@ const Projects = ({isVisible}) => {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

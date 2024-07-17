@@ -4,7 +4,7 @@ const Buttons = ({ color }) => {
   return (
     <>
       <li className="flex gap-1">
-        <Link href="https://linkedin.com/in/romariojs94" className="hover:animate-pulse hover:ease-in-out">
+        <Link href="https://linkedin.com/in/romariojs94" target='_blank' className="hover:animate-pulse hover:ease-in-out">
           <button
             className="bg-[#ffffff] flex text-black shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none transition-transform transform hover:scale-100 duration-300 ease-in-out"
             type="button"
@@ -45,8 +45,8 @@ const Buttons = ({ color }) => {
               />
             </svg>
           </button>
-        </Link>
-        <Link href="http://be.net/romariojs94" className="hover:animate-pulse hover:ease-in-out">
+        </Link> 
+        <Link href="http://be.net/romariojs94" target='_blank' className="hover:animate-pulse hover:ease-in-out">
           <button
             className="bg-[#ffffff] flex text-black hover:text-white shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none transition-transform transform hover:scale-100 duration-300 ease-in-out"
             type="button"

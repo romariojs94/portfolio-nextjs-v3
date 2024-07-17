@@ -40,7 +40,7 @@ export default function Blog({isVisible}) {
               <Link
                 key={index}
                 href={`/blog/${post.slug}`}
-                className="group relative flex h-48 flex-col overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-64 xl:h-96"
+                className="group relative flex h-48 flex-col overflow-hidden rounded-none bg-gray-100 shadow-lg md:h-64 xl:h-96"
               >
                 <img
                   src={post.image}

@@ -41,7 +41,7 @@ export default function Index() {
             />
           </svg>
         </Link>
-        <div className="absolute right-40 bg-black text-white p-2 rounded-md hidden sm:block">
+        <div className="absolute right-40 bg-black text-white p-2 rounded-none hidden sm:block">
           <span className="absolute flex h-3 w-3 -top-1 -right-1">
             <span className="absolute inline-flex h-full w-full bg-green-400 rounded-full animate-ping opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
