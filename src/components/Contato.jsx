@@ -17,18 +17,18 @@ const Contato = ({isVisible}) => {
       <motion.section
         initial="initial"
         animate={isVisible ? 'animate' : 'initial'}
-        className="flex flex-col justify-center sm:w-4/5 mx-auto py-10 sm:py-12 md:py-16 lg:py-20"
+        className="py-10 sm:py-12 md:py-16 lg:py-20"
         id="contato"
       >
-        <div className="flex w-full max-w-[95vw] flex-col items-center py-10 md:py-20 px-8 bg-gradient-to-r from-black to-black/95 z-0">
+        <div className="flex flex-col w-full max-w-[95vw] py-10 md:py-20 px-8 bg-gradient-to-r from-black to-black/95 z-0">
           <h2
-            className={`${syne.className} bg-gradient-to-r from-neutral-600 via-slate-200 to-neutral-50 bg-clip-text text-center font-semibold leading-[1] lg:leading-10 tracking-tighter text-transparent text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-[17ch] lg:max-w-[20ch]`}
+            className={`${syne.className} bg-gradient-to-r from-neutral-600 via-slate-200 to-neutral-50 bg-clip-text font-semibold leading-[1] lg:leading-10 tracking-tighter text-transparent text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-w-[17ch] lg:max-w-[20ch]`}
           >
             <AnimatedWords title="Fique à vontade para entrar em contato." />
           </h2>
           <motion.p
             variants={riseWithFade}
-            className={`${syne.className} mt-4 text-center text-sm sm:text-lg text-slate-400 max-w-[32ch] lg:max-w-[42ch]`}
+            className={`${syne.className} mt-4 text-sm sm:text-lg text-slate-400 max-w-[32ch] lg:max-w-[42ch]`}
           >
             Será um prazer trocar ideias, compartilhar experiências e criar
             conexões significativas.

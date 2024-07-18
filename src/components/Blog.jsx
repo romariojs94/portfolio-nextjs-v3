@@ -30,7 +30,7 @@ export default function Blog({isVisible}) {
       >
         <motion.div variants={riseWithFade}>
           {/* <!-- text - start --> */}
-          <h2 className="text-center font-bold text-gray-800 text-3xl sm:text-4xl md:text-6xl mb-8 md:mb-16">
+          <h2 className="font-bold text-gray-800 text-3xl sm:text-4xl md:text-6xl mb-8 md:mb-16">
             <AnimatedWords title="Blog" />
           </h2>
           {/* <!-- text - end --> */}

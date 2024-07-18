@@ -5,9 +5,9 @@ import Header from '../components/header';
 const syne = Syne({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Romário J. Santos - Frontend Developer',
+  title: 'Romário J. Santos - Web Developer localizado em Blumenau/SC',
   description:
-    'Frontend Developer, React, Next.js, Tailwind CSS, WordPress REST API.',
+    'Web Developer localizado em Blumenau/SC, ofereço soluções personalizadas para websites e aplicações. Aprimorando a presença online do seu negócio. Entre em contato para elevar seu projeto novo projeto'
 };
 
 export default function RootLayout({ children }) {

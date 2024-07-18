@@ -14,9 +14,9 @@ const Hero = () => {
       <motion.main
         initial="initial"
         animate="animate"
-        className="w-full flex flex-col gap-2 justify-center items-start relative h-[70vh] md:h-[calc(100vh-90px)]"
+        className="w-full flex flex-col gap-2 justify-center items-start relative h-[80vh] md:h-[calc(100vh-90px)]"
       >
-        <h2 className="text-left text-5xl break-all sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[10rem] font-extrabold text-[#181717] z-0">
+        <h2 className="text-left max-w-[6ch] sm:max-w-none text-6xl break-all sm:text-7xl md:text-8xl lg:text-[7rem] xl:text-[10rem] font-extrabold text-[#181717] z-0">
           <AnimatedWords title="Web Developer" />
         </h2>
         <motion.p
