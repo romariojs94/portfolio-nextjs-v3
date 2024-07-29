@@ -1,12 +1,11 @@
 'use client';
+import React, { useEffect, useState } from 'react';
+
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
-import Contato from '@/components/Contato';
-import Footer from '@/components/Footer';
 import Blog from '@/components/Blog';
+import Contato from '@/components/Contato';
 
-
-import React, { useEffect, useState } from 'react';
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -30,12 +29,11 @@ export default function Home() {
     };
   }, []);
   return (
-    <div className="w-full">
-      <Hero />
-      <Projects isVisible={isVisible} />
-      <Contato isVisible={isVisible} />
-      <Blog isVisible={isVisible} />
-      <Footer />
-    </div>
+      <>
+        <Hero isVisible={isVisible} />
+        <Projects isVisible={isVisible} />
+        <Contato isVisible={isVisible} />
+        <Blog isVisible={isVisible} />
+      </>
   );
 }

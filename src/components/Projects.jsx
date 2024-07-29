@@ -16,45 +16,44 @@ const Projects = ({isVisible}) => {
         animate={isVisible ? 'animate' : 'initial'}
       >
         <h2 className="text-4xl sm:text-5xl md:text-6xl leading-[1] py-2 lg:text-7xl font-bold text-center">
-          <AnimatedWords title="Projetos recentes" />
+          Projetos recentes
         </h2>
-        <motion.p
-          className="text-center max-w-[55ch] mx-auto -mt-[10px]"
-          variants={riseWithFade}
-        >
-          Alguns projetos selecionados que mostram minha paixão por criar
-          layouts e elevar o desenvolvimento front-end a um novo nível.
-        </motion.p>
-
+        <p className="text-center max-w-[55ch] mx-auto">
+         Alguns projetos selecionados que mostram minha paixão por criar
+         layouts e elevar o desenvolvimento front-end a um novo nível. 
+        </p>
         <div className="flex flex-col lg:flex-row w-full gap-10 pt-4 sm:pt-6 md:pt-8 lg:pt-10">
           <div className="w-full lg:w-1/2">
+          <Link href="/mmclean">
             <img
               className="w-full rounded-none"
-              src="/images/modelo.png"
-              alt=""
-              title=''
-              height={720}
-              width={960}
+              mmclean-mock-thumbnail
+              src="/images/mmclean-mock-thumbnaill.jpg"
+              alt="Mmclean Mock Thumbail"
+              title='Mmclean Mock Thumbail'
+              width={1200}
+              height={805}
 
             />
+          </Link>
           </div>
           <div className="w-full lg:w-1/2">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl leading-[1] py-2 lg:text-5xl font-bold">
-              <AnimatedWords title="Seu projeto aqui" />
+            <h3 className="text-2xl sm:text-3xl md:text-4xl leading-[1] lg:text-5xl font-bold">
+              <AnimatedWords title="MMClean - Produtos automotivos" />
             </h3>
             <motion.p
-              className="md:max-w-[45ch] -mt-[6px]"
+              className="md:max-w-[45ch] -mt-3"
               variants={riseWithFade}
             >
-              Descrição do projeto aqui. Lorem ipsum dolor sit amet, consectetur
+              A MMClean é uma loja que vende produtos automotivos de alta qualidade.
             </motion.p>
             <div className="flex flex-wrap items-center gap-2 mt-3 sm:mt-4 md:mt-6 lg:mt-8">
               <Link
-                href="/"
-                onClick={(e) => e.preventDefault()}
+                href="https://mmclean.com.br/"
+                target='_blank'
                 className="flex w-full sm:w-fit items-center justify-center gap-3 bg-gradient-to-br from-zinc-800 to-zinc-950 px-8 py-3 text-sm font-semibold tracking-tight text-slate-100 transition ease-in hover:shadow-2xl hover:shadow-indigo-500/40 active:scale-95"
               >
-                Visitar
+                Ir para o site
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -84,9 +83,9 @@ const Projects = ({isVisible}) => {
                   ></polyline>
                 </svg>
               </Link>
-              <Link
-                href="/"
-                onClick={(e) => e.preventDefault()}
+              {/* <button
+                type='button'
+                disabled
                 className="flex w-full sm:w-fit cursor-pointer items-center justify-center gap-3 bg-zinc-800 px-8 py-3 text-sm font-semibold tracking-tight text-slate-100 transition ease-in hover:bg-zinc-950 active:scale-95"
               >
                 Código fonte
@@ -112,7 +111,7 @@ const Projects = ({isVisible}) => {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </Link>
+              </button> */}
             </div>
           </div>
         </div>

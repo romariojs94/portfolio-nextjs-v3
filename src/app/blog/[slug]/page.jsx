@@ -28,7 +28,7 @@ export default function PostPage({ params }) {
   }
   return (
     <>
-      <div className="max-w-[800px] mx-auto my-24 p-12 border-2 border-t-gray-300">
+      <div className="max-w-[800px] mx-auto my-24 p-12 border-2 border-t-gray-300 h-[calc(100vh-90px)]">
         <Link href="/#blog" className="font-normal text-lg">
           ← Voltar
         </Link>

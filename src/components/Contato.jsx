@@ -17,7 +17,7 @@ const Contato = ({isVisible}) => {
       <motion.section
         initial="initial"
         animate={isVisible ? 'animate' : 'initial'}
-        className="py-10 sm:py-12 md:py-16 lg:py-20"
+        className="py-10 sm:py-12 md:py-16 lg:py-20 grid place-items-center w-full max-w-[900px] mx-auto"
         id="contato"
       >
         <div className="flex flex-col w-full max-w-[95vw] py-10 md:py-20 px-8 bg-gradient-to-r from-black to-black/95 z-0">

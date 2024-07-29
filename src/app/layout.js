@@ -1,6 +1,7 @@
 import './globals.css';
 import { Syne } from 'next/font/google';
 import Header from '../components/header';
+import Footer from '../components/Footer.jsx';
 
 const syne = Syne({ subsets: ['latin'] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${syne.className} max-w-[98vw] px-2 mx-auto`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
